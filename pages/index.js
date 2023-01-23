@@ -34,7 +34,7 @@ export default function Home() {
             className={styles.logoimg}
             width={150}
             height={150}
-            src="/magadha.png"
+            src="/magadh.png"
             alt=""
           />
         </div>
@@ -182,15 +182,15 @@ export default function Home() {
       <div id="aboutus" className={`${styles.aboutus}`}>
         <h2>About Us</h2>
         <div>
-          Magadha Restaurant is the sweetest spot in town! We serve up delicious
+          magadh Restaurant is the sweetest spot in town! We serve up delicious
           sweets and snacks that will make your taste buds jump for joy. Our
           menu is full of traditional and contemporary treats that will tickle
           your fancy. We only use the freshest and finest ingredients, so you
           can trust that our food is as good for you as it is delicious. Our
           team of skilled chefs are like Willy Wonka, but with less hair and
           more spice. Whether you are in the mood for something sweet or savory,
-          Magadha Restaurant is the place to be! Come on down and taste the
-          magic of India!.
+          magadh Restaurant is the place to be! Come on down and taste the magic
+          of India!.
         </div>
       </div>
 
@@ -253,7 +253,7 @@ export default function Home() {
       </div>
       {/* Footer */}
       <div className={`${styles.footer}`}>
-        <div>Thankyou For Visiting Magadha Restaurant Website 💖</div>
+        <div>Thankyou For Visiting magadh Restaurant Website 💖</div>
       </div>
     </>
   );
