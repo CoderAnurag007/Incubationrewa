@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
+import MenueItems from "../Components/MenueItems";
 import styles from "../styles/Home.module.css";
 import { MenuChat, MenuChinese, MenuPakoda, MenuSnacks } from "./Menu";
 
@@ -64,55 +65,55 @@ export default function Home() {
         <div className={styles.cardsbox}>
           <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
-              <Image src={"/ladoo.png"} width={220} height={200} />
+              <Image alt=" itmes"src={"/ladoo.png"} width={220} height={200} />
             </div>
             <span>Desi Ghee Bundi Laddu</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%", paddingTop: "20px" }}>
-              <Image src={"/cocoladoo.png"} width={220} height={150} />
+              <Image alt=" itmes" src={"/cocoladoo.png"} width={220} height={150} />
             </div>
             <span>Nariyal Laddu</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
-              <Image src={"/gulabjamun.png"} width={200} height={200} />
+              <Image alt=" itmes" src={"/gulabjamun.png"} width={200} height={200} />
             </div>
             <span>Gulab Jamun</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%", paddingTop: "20px" }}>
-              <Image src={"/samosa.png"} width={220} height={150} />
+              <Image alt=" itmes"src={"/samosa.png"} width={220} height={150} />
             </div>
             <span>Special Samosa</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%", paddingTop: "20px" }}>
-              <Image src={"/bemi.png"} width={200} height={150} />
+              <Image alt=" itmes"src={"/bemi.png"} width={200} height={150} />
             </div>
             <span>Bedmi Poori</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
-              <Image src={"/paneer.png"} width={230} height={180} />
+              <Image alt=" itmes"src={"/paneer.png"} width={230} height={180} />
             </div>
             <span>Paneer Jalebi</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
-              <Image src={"/chilli.png"} width={230} height={180} />
+              <Image alt=" itmes"src={"/chilli.png"} width={230} height={180} />
             </div>
             <span> Chilli Paneer</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
-              <Image src={"/chow.png"} width={230} height={180} />
+              <Image alt=" itmes"src={"/chow.png"} width={230} height={180} />
             </div>
             <span> Singapuri Chowmein</span>
           </div>
           <div className={styles.specialcard}>
             <div style={{ height: "90%", marginTop: "20px" }}>
-              <Image src={"/breadpakora.png"} width={230} height={160} />
+              <Image alt=" itmes"src={"/breadpakora.png"} width={230} height={160} />
             </div>
             <span> Bread Pakora</span>
           </div>
@@ -134,14 +135,14 @@ export default function Home() {
       <div id="services" className={`${styles.ourservices}`}>
         <h2>Our Services</h2>
         <div>
-          <Image src={"/deliver.png"} width={100} height={100} />
+          <Image alt=" itmes"src={"/deliver.png"} width={100} height={100} />
           <span>
             We Provide Free! Delivery of your Mesmerizing and Delicious Food at
             your Door Step for Min. Order-150rs upto 3Km
           </span>
         </div>
         <div>
-          <Image src={"/burger.png"} width={100} height={100} />
+          <Image alt=" itmes"src={"/burger.png"} width={100} height={100} />
           <span>
             Delicious Food made with quality materials and Cooked with hygine
           </span>
@@ -157,7 +158,7 @@ export default function Home() {
           your fancy. We only use the freshest and finest ingredients, so you
           can trust that our food is as good for you as it is delicious. Our
           team of skilled chefs are like Willy Wonka, but with less hair and
-          more spice. Whether you're in the mood for something sweet or savory,
+          more spice. Whether you are in the mood for something sweet or savory,
           Magadha Restaurant is the place to be! Come on down and taste the
           magic of India!.
         </div>
@@ -174,10 +175,7 @@ export default function Home() {
             <h3>Snacks</h3>
             {MenuSnacks.map((item) => {
               return (
-                <div className={`${styles.menutext}`}>
-                  {" "}
-                  <div>{item.name}</div> <div>{item.price} rs</div>
-                </div>
+                <MenueItems key={item.name} name={item.name} price={item.price} />
               );
             })}
           </div>
@@ -185,10 +183,7 @@ export default function Home() {
             <h3>Chatori Chat</h3>
             {MenuChat.map((item) => {
               return (
-                <div className={`${styles.menutext}`}>
-                  {" "}
-                  <div>{item.name}</div> <div>{item.price} rs</div>
-                </div>
+                <MenueItems key={item.name} name={item.name} price={item.price} />
               );
             })}
           </div>
@@ -196,9 +191,7 @@ export default function Home() {
             <h3>Chinese</h3>
             {MenuChinese.map((item) => {
               return (
-                <div className={`${styles.menutext}`}>
-                  <div>{item.name}</div> <div>{item.price} rs</div>
-                </div>
+                <MenueItems key={item.name} name={item.name} price={item.price} />
               );
             })}
           </div>
@@ -206,10 +199,7 @@ export default function Home() {
             <h3>Pakoda</h3>
             {MenuPakoda.map((item) => {
               return (
-                <div className={`${styles.menutext}`}>
-                  {" "}
-                  <div>{item.name}</div> <div>{item.price} rs</div>
-                </div>
+                <MenueItems key={item.name} name={item.name} price={item.price} />
               );
             })}
           </div>
