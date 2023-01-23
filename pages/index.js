@@ -61,7 +61,7 @@ export default function Home() {
 
       {/* Our Special  */}
       <div className={styles.ourspecial}>
-        <h2>Our Special</h2>
+        <h2>Our Specials</h2>
         <div className={styles.cardsbox}>
           <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
