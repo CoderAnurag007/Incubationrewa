@@ -155,9 +155,9 @@ export default function Home() {
         <div style={{ marginTop: "3rem", fontWeight: "500" }}>
           Order Now to Get Delicious Experience Now{" "}
         </div>
-        <div className={`${styles.btngrad}`}>Order Now</div>
+        <div className={`${styles.btngrad}`}>Call For Order</div>
         <div style={{ fontWeight: "500" }}>
-          Or Call - 9871788245 / 8002040789 / 8929106647
+          9871788245 / 8002040789 / 8929106647
         </div>
       </div>
 
