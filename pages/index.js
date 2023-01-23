@@ -182,7 +182,7 @@ export default function Home() {
       <div id="aboutus" className={`${styles.aboutus}`}>
         <h2>About Us</h2>
         <div>
-          magadh Restaurant is the sweetest spot in town! We serve up delicious
+          Magadh Foods is the sweetest spot in town! We serve up delicious
           sweets and snacks that will make your taste buds jump for joy. Our
           menu is full of traditional and contemporary treats that will tickle
           your fancy. We only use the freshest and finest ingredients, so you
