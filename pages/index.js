@@ -172,7 +172,7 @@ export default function Home() {
           </span>
         </div>
         <div>
-          <Image alt=" itmes" src={"/burger.png"} width={100} height={100} />
+          <Image alt=" itmes" src={"/soup.png"} width={100} height={100} />
           <span>
             Delicious Food made with quality materials and Cooked with hygine
           </span>
