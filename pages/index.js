@@ -51,7 +51,7 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.welcomebox}>
-        <h1>Welcome To Magadha Foods & Snacks</h1>
+        <h1>Welcome To Magadh Foods & Snacks</h1>
         <div>
           Welcome to our sweet haven! Indulge in our heavenly desserts and
           scrumptious snacks. <br /> Classic to creative, we have something for
