@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import MenueItems from "../Components/MenueItems";
 import styles from "../styles/Home.module.css";
-import { MenuChat, MenuChinese, MenuPakoda, MenuSnacks } from "./Menu";
+import { MenuChat, MenuChinese, MenuPakoda, MenuSnacks } from "../Menu";
 
 export default function Home() {
   const [scrollTarget, setScrollTarget] = useState();
