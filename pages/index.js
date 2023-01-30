@@ -25,9 +25,9 @@ export default function Home() {
         <div className={styles.backimg}>
           <Image
             className={styles.choleimg}
-            width={470}
+            width={320}
             height={320}
-            src="/chole.png"
+            src="/mithai.png"
             alt=""
           />
           <Image
