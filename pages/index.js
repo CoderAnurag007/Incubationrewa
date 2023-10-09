@@ -55,9 +55,6 @@ export default function Home() {
           <div>
             <a href="#services">Our Services</a>
           </div>
-          <div>
-            <a href="#foodmenu">Food Menu</a>
-          </div>
         </div>
       </div>
       <div className={styles.welcomebox}>
@@ -67,11 +64,11 @@ export default function Home() {
           inspiration! <br />
           We are thrilled to embark on this transformative journey with you,
           nurturing your ideas and dreams into reality. Here, we believe that
-          every idea has the potential to change the world, and we're here to
+          every idea has the potential to change the world, and we are here to
           provide the support and guidance you need to make it happen. Together,
-          we'll ignite your entrepreneurial spirit and watch your vision take
+          we will ignite your entrepreneurial spirit and watch your vision take
           flight. Welcome to a place where innovation knows no bounds, and
-          success knows no limits. Let's build the future together!
+          success knows no limits. Lets build the future together!
         </div>
       </div>
 
@@ -191,9 +188,9 @@ export default function Home() {
           successful ventures. We offer expert mentorship, state-of-the-art
           facilities, networking opportunities, and access to funding, all
           within a vibrant community of like-minded entrepreneurs. Since our
-          inception, we've catalyzed the growth of numerous startups, making a
+          inception, we have catalyzed the growth of numerous startups, making a
           positive impact on our local economy. Join us on this exciting
-          journey, and together, we'll shape the future of business.
+          journey, and together, we will shape the future of business.
         </div>
       </div>
 
