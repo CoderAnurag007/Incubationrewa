@@ -22,19 +22,29 @@ export default function Home() {
     <>
       {/* Land PAge */}
       <div className={styles.maincontainer}>
-        <div className={styles.backimg}>
+        <div
+          style={{ width: "100%", overflow: "hidden" }}
+          className={styles.backimg}
+        >
           <Image
-            className={styles.choleimg}
-            width={320}
-            height={320}
-            src="/mithai.png"
+            className={styles.rocketmeet}
+            width={120}
+            height={120}
+            src="/rocketmeet.png"
+            alt=""
+          />
+          <Image
+            className={styles.rocketcartoon}
+            width={120}
+            height={120}
+            src="/rocketcartoon.png"
             alt=""
           />
           <Image
             className={styles.logoimg}
-            width={150}
-            height={150}
-            src="/magadh.png"
+            width={140}
+            height={140}
+            src="/apslogo.png"
             alt=""
           />
         </div>
@@ -51,113 +61,71 @@ export default function Home() {
         </div>
       </div>
       <div className={styles.welcomebox}>
-        <h1>Welcome To Magadh Foods & Snacks</h1>
+        <h1>Welcome To APSU Rewa Incubation Center</h1>
         <div>
-          Welcome to our sweet haven! Indulge in our heavenly desserts and
-          scrumptious snacks. <br /> Classic to creative, we have something for
-          everyone. Come satisfy your cravings with us.
+          Welcome to APSU Rewa incubation center, where innovation meets
+          inspiration! <br />
+          We are thrilled to embark on this transformative journey with you,
+          nurturing your ideas and dreams into reality. Here, we believe that
+          every idea has the potential to change the world, and we're here to
+          provide the support and guidance you need to make it happen. Together,
+          we'll ignite your entrepreneurial spirit and watch your vision take
+          flight. Welcome to a place where innovation knows no bounds, and
+          success knows no limits. Let's build the future together!
         </div>
       </div>
 
       {/* Our Special  */}
       <div className={styles.ourspecial}>
-        <h2>Our Specials</h2>
+        <h2>Our Mentors</h2>
         <div className={styles.cardsbox}>
           <div className={styles.specialcard}>
-            <div style={{ height: "90%" }}>
-              <Image alt=" itmes" src={"/ladoo.png"} width={220} height={200} />
+            <div style={{ height: "90%", paddingTop: "20px" }}>
+              <Image alt=" itmes" src={"/atul.jpg"} width={220} height={180} />
             </div>
-            <span>Desi Ghee Bundi Laddu</span>
+            <span>Prof. Atul Pandey</span>
           </div>
+          <div className={styles.specialcard}>
+            <div style={{ height: "90%" }}>
+              <Image alt=" itmes" src={"/vcaps.jpg"} width={200} height={200} />
+            </div>
+            <span>Prof. Raj Kumar Acharya</span>
+          </div>
+        </div>
+      </div>
+      <div className={styles.ourspecial}>
+        <h2>Our Starups</h2>
+        <div className={styles.cardsbox}>
           <div className={styles.specialcard}>
             <div style={{ height: "90%", paddingTop: "20px" }}>
               <Image
                 alt=" itmes"
-                src={"/cocoladoo.png"}
+                src={"/ayumlogo.PNG"}
                 width={220}
-                height={150}
-              />
-            </div>
-            <span>Nariyal Laddu</span>
-          </div>
-          <div className={styles.specialcard}>
-            <div style={{ height: "90%" }}>
-              <Image
-                alt=" itmes"
-                src={"/gulabjamun.png"}
-                width={200}
-                height={200}
-              />
-            </div>
-            <span>Gulab Jamun</span>
-          </div>
-          <div className={styles.specialcard}>
-            <div style={{ height: "90%", paddingTop: "20px" }}>
-              <Image
-                alt=" itmes"
-                src={"/samosa.png"}
-                width={220}
-                height={150}
-              />
-            </div>
-            <span>Special Samosa</span>
-          </div>
-          <div className={styles.specialcard}>
-            <div style={{ height: "90%", paddingTop: "20px" }}>
-              <Image alt=" itmes" src={"/bemi.png"} width={200} height={150} />
-            </div>
-            <span>Bedmi Poori</span>
-          </div>
-          <div className={styles.specialcard}>
-            <div style={{ height: "90%" }}>
-              <Image
-                alt=" itmes"
-                src={"/paneer.png"}
-                width={230}
                 height={180}
+                style={{ borderRadius: "8px" }}
               />
             </div>
-            <span>Paneer Jalebi</span>
+            <span>Ayum - Digitalizing Healthcare</span>
           </div>
-          <div className={styles.specialcard}>
+          {/* <div className={styles.specialcard}>
             <div style={{ height: "90%" }}>
-              <Image
-                alt=" itmes"
-                src={"/chilli.png"}
-                width={230}
-                height={180}
-              />
+              <Image alt=" itmes" src={"/vcaps.jpg"} width={200} height={200} />
             </div>
-            <span> Chilli Paneer</span>
-          </div>
-          <div className={styles.specialcard}>
-            <div style={{ height: "90%" }}>
-              <Image alt=" itmes" src={"/chow.png"} width={230} height={180} />
-            </div>
-            <span> Singapuri Chowmein</span>
-          </div>
-          <div className={styles.specialcard}>
-            <div style={{ height: "90%", marginTop: "20px" }}>
-              <Image
-                alt=" itmes"
-                src={"/breadpakora.png"}
-                width={230}
-                height={160}
-              />
-            </div>
-            <span> Bread Pakora</span>
-          </div>
+            <span>Prof. Raj Kumar Acharya</span>
+          </div> */}
         </div>
       </div>
 
       {/* Order Now */}
       <div className={`${styles.ordernow}`}>
         <div style={{ marginTop: "3rem", fontWeight: "500" }}>
-          Order Now to Get Delicious Experience Now{" "}
+          Get in touch with us and Fuel Your Ideas
         </div>
-        <div className={`${styles.btngrad}`}>Call For Order</div>
+        <div className={`${styles.btngrad}`}>Contact Us</div>
         <div style={{ fontWeight: "500" }}>
-          9871788245 / 8002040789 / 8929106647
+          {/* 9871788245 / 8002040789 / 8929106647 */}
+          +91-7000566036
         </div>
       </div>
 
@@ -165,16 +133,51 @@ export default function Home() {
       <div id="services" className={`${styles.ourservices}`}>
         <h2>Our Services</h2>
         <div>
-          <Image alt=" itmes" src={"/deliver.png"} width={100} height={100} />
+          <b>Mentoring</b>
           <span>
-            We Provide Free! Delivery of your Mesmerizing and Delicious Food at
-            your Door Step for Min. Order-150rs upto 3Km
+            Right guidance at the right time saves an entrepreneur precious time
+            otherwise spent in re-inventing the wheel! Realizing this, we
+            connect you with experienced mentors who help you think
+            strategically and grow exponentially
           </span>
         </div>
         <div>
-          <Image alt=" itmes" src={"/soup.png"} width={100} height={100} />
+          <b>Launchpad</b>
           <span>
-            Delicious Food made with quality materials and Cooked with hygine
+            Right environment can make all the difference in the early days of
+            your venture when the foundation is being laid. We provide you an
+            inspiring co-working environment with the right mix of creativity,
+            expert guidance, practical advice and interaction with peers.
+          </span>
+        </div>
+        <div>
+          <b>Incubation</b>
+          <span>
+            We incubate early-stage companies that demonstrate the potential to
+            innovate, implement and create social/financial impact.
+          </span>
+        </div>
+        <div>
+          <b>Workshops</b>
+          <span>
+            Right guidance at the right time saves an entrepreneur precious time
+            otherwise spent in re-inventing the wheel! Realizing this, we
+            connect you with experienced mentors who help you think
+            strategically and grow exponentially. Right guidance at the right
+            time saves an entrepreneur precious time otherwise spent in
+            re-inventing the wheel! Realising this, we connect you with
+            experienced mentors who help you think strategically and grow
+            exponentially.
+          </span>
+        </div>
+        <div>
+          <b>Women Startups</b>
+          <span>
+            The Women Startup Program aims to support ambitious and innovative
+            women entrepreneurs by enabling them to transform their idea into a
+            business venture. The Program is designed to focus on enhancement of
+            the entrepreneurial and managerial skills of women leading early and
+            ideation stage ventures.
           </span>
         </div>
       </div>
@@ -182,20 +185,20 @@ export default function Home() {
       <div id="aboutus" className={`${styles.aboutus}`}>
         <h2>About Us</h2>
         <div>
-          Magadh Foods is the sweetest spot in town! We serve up delicious
-          sweets and snacks that will make your taste buds jump for joy. Our
-          menu is full of traditional and contemporary treats that will tickle
-          your fancy. We only use the freshest and finest ingredients, so you
-          can trust that our food is as good for you as it is delicious. Our
-          team of skilled chefs are like Willy Wonka, but with less hair and
-          more spice. Whether you are in the mood for something sweet or savory,
-          magadh Restaurant is the place to be! Come on down and taste the magic
-          of India!.
+          Welcome to APSU Rewa Incubation Center, where innovation and
+          entrepreneurship thrive. Our mission is to provide aspiring startups
+          with the resources and guidance needed to turn their ideas into
+          successful ventures. We offer expert mentorship, state-of-the-art
+          facilities, networking opportunities, and access to funding, all
+          within a vibrant community of like-minded entrepreneurs. Since our
+          inception, we've catalyzed the growth of numerous startups, making a
+          positive impact on our local economy. Join us on this exciting
+          journey, and together, we'll shape the future of business.
         </div>
       </div>
 
       {/* Food Menu */}
-      <div className={`${styles.menucontainer}`}>
+      {/* <div className={`${styles.menucontainer}`}>
         <h2 id="foodmenu" style={{ textAlign: "center" }}>
           Our Food Menu
         </h2>
@@ -250,10 +253,10 @@ export default function Home() {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Footer */}
       <div className={`${styles.footer}`}>
-        <div>Thankyou For Visiting magadh Restaurant Website 💖</div>
+        <div>Thankyou For Visiting APSU Rewa Incubation Center Website 💖</div>
       </div>
     </>
   );
